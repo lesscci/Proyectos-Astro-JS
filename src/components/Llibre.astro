@@ -1,0 +1,20 @@
+---
+let { autor, titol, imatge, pagina } = Astro.props;
+---
+
+<div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
+    <a href={`../${pagina}`}>
+        <div class="max-w-sm w-full h-full rounded overflow-hidden border border-black-600 flex flex-col">
+            <div class="h-full w-full flex items-center justify-center">
+                <img class="h-full w-full object-cover" src={`/${imatge}`} alt={imatge} />
+            </div>
+            <div class="product-item text-center px-6 py-4">
+                <div class="text-xl mb-2 titulo-color">{titol}</div>
+                <p class="text-gray-700 text-base">
+                    {autor}
+        
+                </p>
+            </div>
+        </div>
+    </a>
+</div>

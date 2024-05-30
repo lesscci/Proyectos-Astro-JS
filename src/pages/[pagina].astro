@@ -1,0 +1,22 @@
+---
+import Base from "../layauts/Base.astro";
+import llibres from "../data/llibres.json"
+
+
+const {pagina} = Astro.params;
+const {titol,autor} = Astro.props;
+
+
+//getStaticPatchs le tienes que pasar todas las posibilidades de página
+export async function getStaticPaths(){
+    //el parametro será el ID con que identificar 
+    //props las variables que va a contener en esa página
+    return llibres.map(llibre => ({params: {pagina: llibre.pagina}, props: {...llibre}}))
+}
+---
+
+<Base>
+
+<h1> {pagina}</h1>
+<h2>{titol} {autor}</h2>
+</Base>

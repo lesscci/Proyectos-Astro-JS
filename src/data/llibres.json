@@ -1,0 +1,27 @@
+ [
+	{
+		"titol": "ZOZO DORMILON",
+		"autor": "Bruno Douin",
+		"imatge": "zozo_dormilon.jpg",
+		"pagina": "zozodormilon"
+	},
+	{
+		"titol": "JA NO M'AGRADEN ELS LLIBRES",
+		"autor": "DAISY HIRST",
+		"imatge": "no_magraden.jpg",
+		"pagina":"janomagraden"
+	},
+	{
+		"titol": "YA NO ME GUSTAN LOS LIBROS!",
+		"autor": "DAISY HIRST",
+		"imatge": "no_megustan.jpg",
+		"pagina":"yanomegustan"
+		
+	},
+	{
+		"titol": "PUEDES HACERLO SOLO, SAM",
+		"autor": "AMY HEST, ANITA JERAM",
+		"imatge": "puedes_hacerlo.jpg",
+		"pagina":"puedeshacerlo"
+	}
+]

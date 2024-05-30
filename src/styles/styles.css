@@ -1,0 +1,34 @@
+.padre {
+  width: 25%;
+  margin: 10px;
+  display: inline-block;
+}
+
+.titulo-color {
+  color: #50bada;
+  font-size: 20px;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+
+.product-item {
+  padding: 20px 18px;
+}
+
+.titulo-color:hover {
+  color: #d71f13;
+}
+
+.container-custom {
+  max-width: 1215px;
+}
+
+.titulor {
+  font-size: 28px;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    width: 735px;
+  }
+}

@@ -1,0 +1,55 @@
+---
+import Base from "../layauts/Base.astro";
+import Llibre from "../components/Llibre.astro";
+import DetallesLibro  from "../pages/detalles-libro.astro";
+
+
+const llibres = [
+  {
+    titol: "ZOZO DORMILON",
+    autor: "Bruno Douin",
+    imatge: "zozo_dormilon.jpg",
+    pagina: "zozodormilon",
+    id:1
+  },
+  {
+    titol: "JA NO M'AGRADEN ELS LLIBRES",
+    autor: "DAISY HIRST",
+    imatge: "no_magraden.jpg",
+    pagina: "janomagraden",
+    id:2
+  },
+  {
+    titol: "YA NO ME GUSTAN LOS LIBROS!",
+    autor: "DAISY HIRST",
+    imatge: "no_megustan.jpg",
+    pagina: "yanomegustan",
+    id:3
+  },
+  {
+    titol: "PUEDES HACERLO SOLO, SAM",
+    autor: "AMY HEST, ANITA JERAM",
+    imatge: "puedes_hacerlo.jpg",
+    pagina: "puedeshacerlo",
+    id:4
+  },
+];
+---
+
+<Base>
+  <div class="container-custom mx-auto px-4">
+    <h1 class="titulor text-center text-red-600 text-28px mb-4">RECIENTES</h1>
+    <div class="flex flex-wrap -mx-4">
+    {
+      llibres.map((llibres) => (
+        <Llibre
+          titol={llibres.titol}
+          autor={llibres.autor}
+          imatge={llibres.imatge}
+          pagina={llibres.pagina}
+          id={llibres.id}
+        />
+      ))
+    }
+  </div>
+</Base>
